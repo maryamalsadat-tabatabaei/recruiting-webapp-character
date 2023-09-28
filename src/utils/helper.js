@@ -11,3 +11,10 @@ export function isMeetClassRequirements(attributes, classAttributes) {
     ([attribute, value]) => attributes[attribute] >= value
   );
 }
+
+export function calculateTotalAvailablePoints(attributes) {
+  const intelligenceModifierValue = Math.floor(
+    (attributes.Intelligence - 10) / 2
+  );
+  return 10 + 4 * intelligenceModifierValue;
+}
