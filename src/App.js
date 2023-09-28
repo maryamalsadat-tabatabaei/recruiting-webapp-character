@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AttributeList from "./components/attributes/AttributeList";
+import ClassList from "./components/classes/ClassList";
 import "./App.css";
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
             attributes={attributes}
             onUpdateAttributes={updateAttributes}
           />
+        </div>
+        <div>
+          <h1>Classes</h1>
+          <ClassList attributes={attributes} />
         </div>
       </section>
     </div>

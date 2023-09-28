@@ -19,7 +19,7 @@
 .App-header {
   background-color: #282c34;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -27,6 +27,10 @@
 }
 
 .App-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
   flex: 1 1 0;
   background-color: hsl(220deg 13% 13%);
   color: white;
@@ -43,4 +47,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.class-item {
+  cursor: pointer;
+}
+
+.class-item.pass {
+  color: #790707;
+}
+
+.selected-class ul {
+  padding: 0;
+  list-style-type: none;
 }
